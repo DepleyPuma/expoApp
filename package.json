@@ -6,13 +6,26 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "backend": "cd backend && npm run dev",
+    "dev": "npm-run-all --parallel backend start",
+    "test-backend": "curl http://localhost:3001/api/health"
   },
   "dependencies": {
+    "@expo-google-fonts/inter": "^0.4.2",
+    "@react-native-picker/picker": "2.11.1",
     "expo": "~54.0.6",
+    "expo-constants": "~18.0.8",
+    "expo-font": "~14.0.8",
+    "expo-linking": "~8.0.8",
+    "expo-router": "~6.0.3",
     "expo-status-bar": "~3.0.8",
-    "react": "19.1.0",
-    "react-native": "0.81.4"
+    "react": "^19.1.0",
+    "react-hook-form": "^7.62.0",
+    "react-native": "0.81.4",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-size-matters": "^0.4.2"
   },
   "devDependencies": {
     "@types/react": "~19.1.0",
